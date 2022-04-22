@@ -4,6 +4,7 @@ import ItemData from './data/ItemData';
 import { Header } from './components/Header';
 import { ItemList } from './components/ItemList';
 import { ItemStats } from './components/ItemStats';
+import { ItemForm } from './components/ItemForm';
 
 function App() {
   const [myItems, setMyItems] = useState(ItemData);
@@ -18,6 +19,7 @@ function App() {
     <div className='App'>
       <Header text='Blog App'>Website Header</Header>
       <div className='container'>
+        <ItemForm />
         <ItemStats items={myItems} />
         <ItemList items={myItems} handleDelete={deleteItem} />
       </div>
