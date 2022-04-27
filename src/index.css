@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -15,16 +16,18 @@ header {
 }
 
 .container {
-  padding: 1rem;
+  width: 600px;
+  margin: 0 auto;
 }
 
 .card {
   background-color: white;
-  display: inline-block;
+  display: block;
   padding: 2rem;
   margin: 1rem;
   border-radius: 0.5rem;
   position: relative;
+  width: 100%;
 }
 
 .card.reverse {
@@ -52,4 +55,34 @@ button.close {
   right: 8px;
   background-color: transparent;
   border: none;
+  cursor: pointer;
+}
+
+.input-group {
+  width: 100%;
+}
+
+.input-group select,
+.input-group input {
+  padding: 5px 10px;
+  margin: 2px 0;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.btn {
+  margin: 2px 0;
+  width: 100%;
+  font-size: 1rem;
+  padding: 10px;
+  border: none;
+  background-color: #06152e;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #545454;
 }
